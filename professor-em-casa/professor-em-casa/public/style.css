@@ -1,0 +1,30 @@
+:root{--ink:#17324d;--sky:#e8f1f8;--sun:#ffb703;--leaf:#2a9d8f;--line:#cfdde8;--bg:#f3f7fa;--card:#fff;--err:#b3261e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6eef5;--sky:#1d3347;--line:#2c4a63;--bg:#0f1f2d;--card:#162b3d;--err:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 Nunito,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 20px;background:#17324d;color:#fff}
+.brand{font-size:1.25rem;font-weight:800}
+nav{display:flex;gap:4px}
+header .link{color:#fff}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:18px}
+h1,h2,h3{margin:0;line-height:1.2}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:12px}
+.narrow{max-width:420px;margin:24px auto 0;width:100%}
+label{display:grid;gap:4px;font-weight:700;font-size:.95rem}
+input,select{font:inherit;padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:inherit;width:100%}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400}.check input{width:auto;margin-top:5px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.btn{font:inherit;font-weight:800;padding:11px 18px;border:0;border-radius:10px;background:var(--sun);color:#17324d;cursor:pointer}
+.btn.ghost{background:transparent;border:2px solid var(--line);color:inherit}
+.link{font:inherit;background:none;border:0;color:var(--leaf);font-weight:700;cursor:pointer;padding:6px 8px;text-decoration:underline}
+.error{color:var(--err);margin:0;font-weight:700}.muted{opacity:.75;margin:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.grid2{grid-template-columns:1fr}}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.chat{display:grid;gap:10px;max-height:58vh;overflow:auto;padding:4px}
+.bubble{max-width:85%;padding:10px 14px;border-radius:16px;white-space:pre-wrap;overflow-wrap:anywhere}
+.tutor{background:var(--sky);border-bottom-left-radius:4px}
+.user{background:var(--leaf);color:#fff;justify-self:end;border-bottom-right-radius:4px}
+.send{display:flex;gap:8px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+.scroll{overflow-x:auto}
